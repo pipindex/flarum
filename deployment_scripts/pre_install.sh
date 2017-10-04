@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo rm -rf /home/ubuntu/flarum
+#sudo rm -rf /home/ubuntu/flarum
