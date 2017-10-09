@@ -3,11 +3,11 @@
 
 * Step 1: `git clone pipindex/flarum`
 * Step 2: `git clone pipindex/shaw-flarum-extension`
-* Step 3: `composer install`
-* Step 4: `composer update`
+* Step 3: `Inside {flarum_dir }composer install`
+* Step 4: `Inside {flarum_dir }composer update`
 * Step 5: `rm -rf {flarum_dir}/vendor/pipindex/*`
 * Step 6: `ln -s {local-shaw-flarum-extension-directory} {flarum_dir}/vendor/pipindex/shaw-flarum-extension`
-* Step 7: `php flarum cache:clear`
+* Step 7: `Inside {flarum_dir } php flarum cache:clear`
 * Step 8: `php -S localhost:9999 launch.php`
 
 `launch.php` is a custom script that gives you a reproducable development environment. 
