@@ -1,8 +1,14 @@
 ![](https://dt9ph4xofvj87.cloudfront.net/user/sites/shawacademy.com/themes/mytheme/images/logo/logo-284-50/png/regular.png)
 ## How to launch with one command?
 
-* Step 1: `composer install`
-* Step 2: `php -S localhost:9999 launch.php`
+* Step 1: `git clone pipindex/flarum`
+* Step 2: `git clone pipindex/shaw-flarum-extension`
+* Step 3: `composer install`
+* Step 4: `composer update`
+* Step 5: `rm -rf {flarum_dir}/vendor/pipindex/*`
+* Step 6: `ln -s {local-shaw-flarum-extension-directory} {flarum_dir}/vendor/pipindex/shaw-flarum-extension`
+* Step 7: `php flarum cache:clear`
+* Step 8: `php -S localhost:9999 launch.php`
 
 `launch.php` is a custom script that gives you a reproducable development environment. 
 
